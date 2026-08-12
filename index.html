@@ -27,7 +27,6 @@
                     id="animated-asset-2"
                     src="assets2/asset.glb"
                 ></a-asset-item>
-                <img id="animated-gif-3" src="assets3/asset.gif" />
             </a-assets>
 
             <a-marker
@@ -67,23 +66,7 @@
                     gesture-handler
                 ></a-entity>
             </a-marker>
-            <a-marker
-                id="markerC"
-                type="pattern"
-                preset="custom"
-                url="assets3/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-            >
-                <a-entity
-                    id="gif-model-3"
-                    geometry="primitive: plane; width: 1.5; height: 1.5"
-                    material="shader: gif; src: #animated-gif-3; transparent: true;"
-                    rotation="-90 0 0"
-                    position="0 0 0"
-                    class="clickable"
-                    gesture-handler
+
                 ></a-entity>
             </a-marker>
 
