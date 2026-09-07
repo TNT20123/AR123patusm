@@ -27,6 +27,10 @@
                     id="animated-asset-2"
                     src="assets2/asset.glb"
                 ></a-asset-item>
+                <a-asset-item
+                    id="animated-asset-3"
+                    src="assets3/asset.glb"
+                ></a-asset-item>
             </a-assets>
 
             <a-marker
@@ -62,6 +66,24 @@
                     scale="1.158070552859978 1.158070552859978 1.158070552859978"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset-2"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+            <a-marker
+                id="markerC"
+                type="pattern"
+                preset="custom"
+                url="assets3/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+            >
+                <a-entity
+                    id="bowser-model-3"
+                    scale="1.158070552859978 1.158070552859978 1.158070552859978"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset-3"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
